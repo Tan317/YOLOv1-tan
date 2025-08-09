@@ -1,0 +1,17 @@
+#"""数据集源路径root、训练集、验证集、测试集地址"""
+#path: ../datasets/VOC     # 数据集源路径root dir
+train: # root下的训练集地址
+  - VOCdevkit/images/train
+#  - images/train2007
+#  - images/val2012
+#  - images/val2007
+val: # root下的验证集地址
+  - VOCdevkit/images/val
+test: # root下的测试集地址
+  - VOCdevkit/images/val
+
+# Classes
+nc: 2  # 检测的类别数量
+names: ['without-mask', 'mask']  # 检测的类别名，避免用中文
+
+
